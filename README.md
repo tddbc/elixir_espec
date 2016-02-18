@@ -1,20 +1,23 @@
-# ElixirEspec
+# TDDBC for Elixir with ESpec
 
-**TODO: Add description**
+これはTDDBCのElixir向けESpecプロジェクトです。
 
-## Installation
+## セットアップ
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+```
+$ mix deps.get
+```
 
-  1. Add elixir_espec to your list of dependencies in `mix.exs`:
+`espec` を実行して以下のようにテストが正常終了すればOKです。
 
-        def deps do
-          [{:elixir_espec, "~> 0.0.1"}]
-        end
+```
+$ MIX_ENV=test mix espec
+.
 
-  2. Ensure elixir_espec is started before your application:
+	1 examples, 0 failures
 
-        def application do
-          [applications: [:elixir_espec]]
-        end
+	Finished in 0.11 seconds (0.09s on load, 0.01s on specs)
 
+	Randomized with seed 410331
+
+```
